@@ -100,7 +100,15 @@ module WadsHelper
     end
   end
 
-  def wad_sub_header(wad)
+  def wad_subheader(wad)
+    if wad.forum_thread then
+      content_tag :p do
+        link_to("Submission Thread", wad.forum_thread)
+      end
+    end
+  end
+
+  def wad_table_options(wad)
     content_tag :p, class: 'p-short one-line' do
       [
         demo_details(wad),

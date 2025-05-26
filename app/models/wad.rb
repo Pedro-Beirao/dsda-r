@@ -12,6 +12,7 @@ class Wad < ApplicationRecord
                          format: { with: VALID_USERNAME_REGEX }
   validates :author,     presence: true, length: { maximum: 50 }
   validates_associated :wad_file
+  validates :forum_thread, length: { maximum: 255 }, allow_nil: true
 
   delegate :longest_demo_time, :average_demo_time, :total_demo_time,
            :most_recorded_player, :player_count, :demo_count,

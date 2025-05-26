@@ -12,7 +12,8 @@ describe Domain::Wad::Create do
       single_map: false,
       iwad: iwads(:doom),
       file: { data: '1234', name: 'test_wad.zip' },
-      file_id: file_id
+      file_id: file_id,
+      forum_thread: "test_link"
     }
   }
   let(:file_id) { nil }

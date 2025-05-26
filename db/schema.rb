@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2025_05_09_222144) do
+ActiveRecord::Schema[7.1].define(version: 2025_05_26_211922) do
   create_table "admins", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
@@ -187,6 +187,7 @@ ActiveRecord::Schema[7.0].define(version: 2025_05_09_222144) do
     t.boolean "single_map", default: false
     t.integer "wad_file_id"
     t.integer "parent_id"
+    t.string "forum_thread"
     t.index ["iwad_id", "short_name"], name: "index_wads_on_iwad_id_and_short_name"
     t.index ["parent_id"], name: "index_wads_on_parent_id"
     t.index ["short_name"], name: "index_wads_on_short_name", unique: true

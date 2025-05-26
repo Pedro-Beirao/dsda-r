@@ -5,7 +5,9 @@
   <% cache ['wad_header_v011', @wad] do %>
     <%= wad_version_banner(@wad) %>
     <%= wad_header(@wad) %>
-    <%= wad_sub_header(@wad) %>
+    <%= wad_subheader(@wad) %>
+    <br>
+    <%= wad_table_options(@wad) %>
   <% end %>
 
   <% cache ['wad_demo_table_v003', @demos] do %>
