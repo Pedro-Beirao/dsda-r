@@ -16,6 +16,7 @@ class WadsController < ApplicationController
     :is_commercial,
     :single_map,
     :parent,
+    :command_line,
     :forum_thread
   ].freeze
 

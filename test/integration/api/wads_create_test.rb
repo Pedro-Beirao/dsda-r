@@ -15,6 +15,7 @@ class WadsCreateTest < ActionDispatch::IntegrationTest
         single_map: false,
         iwad: @iwad.name,
         parent: wads(:wad_1).short_name,
+        command_line: "-cl 9 -file test_wad.wad",
         forum_thread: "test_link",
         file: {
           data: '1234',

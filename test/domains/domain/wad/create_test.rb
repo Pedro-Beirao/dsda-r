@@ -13,6 +13,7 @@ describe Domain::Wad::Create do
       iwad: iwads(:doom),
       file: { data: '1234', name: 'test_wad.zip' },
       file_id: file_id,
+      command_line: "-cl 9 -file test_wad.wad",
       forum_thread: "test_link"
     }
   }

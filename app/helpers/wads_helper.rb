@@ -101,11 +101,18 @@ module WadsHelper
   end
 
   def wad_subheader(wad)
-    if wad.forum_thread then
-      content_tag :p do
-        link_to("Submission Thread", wad.forum_thread)
+    [
+      if wad.command_line then
+        content_tag :p do
+          wad.command_line
+        end
+      end,
+      if wad.forum_thread then
+        content_tag :p do
+          link_to("Submission Thread", wad.forum_thread)
+        end
       end
-    end
+      ].join(' ').html_safe
   end
 
   def wad_table_options(wad)

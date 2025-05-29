@@ -27,7 +27,7 @@ module Domain
     def create(
       iwad:, name:, short_name:, author:,
       year: nil, compatibility: nil, is_commercial: nil, single_map: false,
-      file: nil, file_id: nil, parent: nil, forum_thread: nil
+      file: nil, file_id: nil, parent: nil, command_line: nil, forum_thread: nil
     )
       iwad = Domain::Iwad.single(either_name: iwad)
       parent = Domain::Wad.single(either_name: parent) if parent
@@ -43,6 +43,7 @@ module Domain
         file: file,
         file_id: file_id,
         parent: parent,
+        command_line: command_line,
         forum_thread: forum_thread
       )
     end
