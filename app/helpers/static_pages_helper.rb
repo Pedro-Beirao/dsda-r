@@ -10,6 +10,8 @@ module StaticPagesHelper
           { name: 'level', required: false, type: 'string', description: "The level name" },
           { name: 'category', required: false, type: 'string', description: "The category name" },
           { name: 'only_records', required: false, type: 'bool', description: "Whether to only list demos that are records (default = <code>false</code>)" },
+          { name: 'tas', required: false, type: 'bool', description: "Whether to only get TAS demos" },
+          { name: 'guys', required: false, type: 'integer', description: "How many guys the demos have" },
           { name: 'sort_by', required: false, type: 'string', description: "The field to sort the list by and in what direction.<br> The allowed fields are <code>id</code>, <code>time</code> and <code>date</code>. The direction can be <code>asc</code> or <code>desc</code>. (default = <code>time:asc</code>)" },
           { name: 'page', required: false, type: 'integer', description: "The page number (default = <code>1</code>)" },
           { name: 'per', required: false, type: 'integer', description: "How many demos to show per page (default = <code>50</code>, max = <code>200</code>)" }
