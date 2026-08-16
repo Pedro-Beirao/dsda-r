@@ -5,7 +5,7 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h2>Doom Speed Demo Archive</h2>
+    <h2>Doom Speed Demos Archive</h2>
     <p>
       The home of classic Doom speedrunning.
       This site archives demos created for Doom and related games
@@ -20,7 +20,12 @@
       Also see the <%= link_to('Advice', advice_path) %> page for recommendations on how to improve
       when starting out. Ready to start recording? Check out the recommended source port for doom speedrunning:
       <a href="https://github.com/kraflab/dsda-doom">DSDA-Doom</a>.
+      <br>
+      <a href="https://discord.gg/9paQ52zQUT">
+        <img alt="Discord" src="https://img.shields.io/discord/218106532406099969?style=flat&logo=discord&logoColor=white&label=Discord&color=white">
+      </a>
     </p>
+
     <% cache "home_v002:#{last_update}" do %>
       <h4>
         Proudly hosting <%= Demo.count %> demos, by <%= Player.count %> players, for

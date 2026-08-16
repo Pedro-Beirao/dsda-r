@@ -3,7 +3,7 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w('self'),
     script_src: %w('self' https://maxcdn.bootstrapcdn.com/ https://embed.twitch.tv/embed/v1.js),
     connect_src: %w('self'),
-    img_src: %w('self'),
+    img_src: %w('self' https://img.shields.io/),
     font_src: %w('self' https://fonts.gstatic.com/),
     style_src: %w('self' https://fonts.googleapis.com/),
     frame_src: %w('self' https://embed.twitch.tv/),
