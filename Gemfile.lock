@@ -111,10 +111,10 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    capistrano3-puma (5.2.0)
+    capistrano3-puma (8.1.0)
       capistrano (~> 3.7)
       capistrano-bundler
-      puma (>= 4.0, < 6.0)
+      puma (>= 6.1, < 9.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -264,7 +264,7 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (4.3.12)
+    puma (8.0.2)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.16)
@@ -434,7 +434,7 @@ DEPENDENCIES
   nokogiri (~> 1.16.0)
   pg (~> 1.5)
   pry
-  puma (~> 4.3)
+  puma (~> 8.0.2)
   rails (~> 7.1.0)
   rails-jquery-autocomplete
   rotp
